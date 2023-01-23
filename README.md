@@ -5,10 +5,7 @@ A basic setup for K8s with k3d as a cluster managemnet, ArgoCd for the CD.
 
 
 ### Run current setup
-` k3d cluster create -c k3d-k8s-exp.yaml && \
-kubectl --context=k3d-k8s-exp apply -f hello-namespace.yaml && \
-kubectl apply -f api-deploy.yaml && \
-kubectl apply -f api-service.yaml `
+` k3d cluster create -c k8s-exp.yaml && kubectl apply -f api.yaml `
 
 
 ### get logs of all running service
